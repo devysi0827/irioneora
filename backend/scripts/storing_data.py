@@ -10,7 +10,7 @@ from artifacts.serializers import ArtifactSerializer
 def run():
     # 소장품 상세정보 불러오기
     URL = 'http://www.emuseum.go.kr/openapi/relic/detail'
-    API_KEY = ['SrLLfGdZjGbS5OmPmSlewYvcR6tXPmpk11SduYlvFr7r6CA7L9vjF7JRSx7rhrTEvOdAlUDtqkY9HJAg8+Y6ww==',
+    API_KEY = ["{jo's museum key}",
                ]
 
     for key in API_KEY:

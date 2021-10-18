@@ -43,7 +43,7 @@ class KakaoAccountsLogin(SocialLoginView):
 def kakao_login(request):
 
 
-    REST_API_KEY = '0e63d9a73b29cb9e1c85f0279f834367'
+    REST_API_KEY = "{jo's kakao key}"
     REDIRECT_URI = 'http://j5a601.p.ssafy.io/login'
 
     # 인증 코드

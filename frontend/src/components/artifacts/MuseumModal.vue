@@ -115,7 +115,7 @@ export default {
     } else {
       const script = document.createElement('script')
       script.onload = () => window.kakao.maps.load(this.initMap);
-      script.src = 'http://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=ac9d810283d93186609b852e5cc33be8'
+      script.src = `http://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=\${park_kakao_key}`
       document.head.appendChild(script)
     }
   }

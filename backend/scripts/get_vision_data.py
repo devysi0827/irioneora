@@ -1,7 +1,7 @@
 import requests
 from io import BytesIO
 
-API_KEY= '67852745621896a093fa2abcffbd1275'
+API_KEY= "{LEE's KAKAO key}"
 
 def get_image_from_url(url):
     try:

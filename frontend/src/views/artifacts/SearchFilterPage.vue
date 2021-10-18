@@ -58,7 +58,7 @@ import ErrorModal from "@/components/artifacts/ErrorModal";
 
         /// SEARCH BOX
         //setting values
-        serviceKey: 'DLuSbLjmCJIDKmhoSB7ELx3eVXXxg9ZBqh9oC8/eFWTcq2gDMqfQA7jrooSkvzWgYv/pd9a6fUJKG40K3VQXHg==',
+        serviceKey: "{sell's museum key}",
 
         // FILTER
         nationalityCode: "",

@@ -28,7 +28,7 @@ import SearchCard from './SearchCard.vue'
     data: function() {
       return {
         //setting values
-        serviceKey: 'DLuSbLjmCJIDKmhoSB7ELx3eVXXxg9ZBqh9oC8/eFWTcq2gDMqfQA7jrooSkvzWgYv/pd9a6fUJKG40K3VQXHg==',
+        serviceKey: "{sell's museum key}",
         placeholder: '검색어를 입력해주세요.',
 
         // index case

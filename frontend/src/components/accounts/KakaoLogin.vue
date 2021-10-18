@@ -17,7 +17,7 @@ export default {
   methods: {
     onClick() {
       const REDIRECT_URI = 'http://j5a601.p.ssafy.io/login'
-      const REST_API_KEY = '0e63d9a73b29cb9e1c85f0279f834367'
+      const REST_API_KEY = "{jo's KAKAO key}"
       const kakao_redirect = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`
       window.location.href = kakao_redirect
     }

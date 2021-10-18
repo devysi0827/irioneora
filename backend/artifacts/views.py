@@ -23,7 +23,7 @@ from konlpy.tag import Okt, Kkma, Twitter
 from collections import Counter
 
 # API_KEY
-API_KEY = 'SrLLfGdZjGbS5OmPmSlewYvcR6tXPmpk11SduYlvFr7r6CA7L9vjF7JRSx7rhrTEvOdAlUDtqkY9HJAg8+Y6ww=='
+API_KEY = "{jo's musuem key}"
 
 # 저장 여부 확인
 def is_saved(id):
@@ -299,7 +299,7 @@ def artifact_like(request, artifact_id):
     # 좋아요한 artifact가 DB에 없는 경우 → 저장 후 좋아요하기
     if not Artifact.objects.all().filter(identification_number = artifact_id):
         artifact_url = f'http://www.emuseum.go.kr/openapi/relic/detail'
-        API_KEY = 'SqZskQNLBydKAJrTV5fUn3zRuenH7ELym5KvJWma15ABpxIYBeQK15yeq+cLDfiGBiMv8Pt5VFk1H0Sz4lX3yw=='
+        API_KEY = "{na's musueum key}"
         params = {'serviceKey': API_KEY, 'id': artifact_id}
 
         raw_data = requests.get(artifact_url, params=params)
@@ -310,7 +310,7 @@ def artifact_like(request, artifact_id):
             if item.get('key') == "imgUri":
                 artifact_img = item.get('value')
 
-        # artifact_img 주소: '211.252.141.58/openapi/img?serviceKey=%2F%2BRIMbHtvxv0Qjz6tKz5DqXD5svR9t4DN.. 이하 생략'
+        # artifact_img 주소: '211.252.141.58/openapi/img?serviceKey=.. 이하 생략'
         # partition을 사용 → '/'을 기준으로 문자열을 자름 → ('211.252.141.58', '/', 'openapi/img?serviceKey=7QIFITdRH1k.. 이하 생략')
         split_artifact_img = list(artifact_img.partition('/'))
 
@@ -359,7 +359,7 @@ def artifact_resemble(request, artifact_id):
 @api_view(['GET'])
 def get_museum_info(request, museum_name):
     museum_url = f'http://api.data.go.kr/openapi/tn_pubr_public_museum_artgr_info_api'
-    API_KEY = 'SqZskQNLBydKAJrTV5fUn3zRuenH7ELym5KvJWma15ABpxIYBeQK15yeq+cLDfiGBiMv8Pt5VFk1H0Sz4lX3yw=='
+    API_KEY = "{na's museum key}"
     params = {'serviceKey': API_KEY, 'fcltyNm': museum_name}
 
     raw_data = requests.get(museum_url, params=params)

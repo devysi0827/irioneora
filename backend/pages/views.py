@@ -6,7 +6,7 @@ from datetime import datetime
 import requests, bs4
 
 # constant value
-service_key = 'SrLLfGdZjGbS5OmPmSlewYvcR6tXPmpk11SduYlvFr7r6CA7L9vjF7JRSx7rhrTEvOdAlUDtqkY9HJAg8+Y6ww=='
+service_key = "{jo's museum key}"
 
 @api_view(['GET'])
 def artifact_save_recommend(request,pageNo):

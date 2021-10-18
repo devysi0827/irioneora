@@ -14,7 +14,7 @@ const ROUTES = {
 }
 
 const token = {'Authorization': `Token ${cookies.get('user-token')}`}
-const SERVICE_KEY = 'SrLLfGdZjGbS5OmPmSlewYvcR6tXPmpk11SduYlvFr7r6CA7L9vjF7JRSx7rhrTEvOdAlUDtqkY9HJAg8%2BY6ww%3D%3D'
+const SERVICE_KEY = "{JO's musuem key}"
 
 // 오늘의 문화재 요청
 async function requestToday() {
